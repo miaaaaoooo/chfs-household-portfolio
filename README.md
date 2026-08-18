@@ -1,6 +1,6 @@
 # House-Price Changes and Household Risky-Asset Allocation (CHFS)
 
-Code for my undergraduate honors thesis (School of Economics, Shandong University, 2024; graded *Excellent*):
+Code for my undergraduate honors thesis:
 **"The Impact of House-Price Changes on Household Risky Financial Asset Allocation under a Housing-Market Downturn."**
 
 The analysis builds a four-wave household-year panel of ~22,885 observations from the raw
@@ -16,7 +16,6 @@ and estimates the effect of house-price changes on households' allocation to ris
 | `03_merge_panel.do` | Stack the four cleaned waves into a panel; add region dummies, log variables, asset groups, and a Sharpe-ratio measure. |
 | `04_regression_main.do` | Construct the key regressor (house-price change rate), set the panel, and run two-way fixed-effects, by-wave Probit / left-censored Tobit, heterogeneity (age, urban/rural), mechanism, and robustness specifications; export tables via `esttab`. |
 
-A Python re-implementation (independent replication, including a left-censored Tobit MLE coded from scratch) is included in `/python`. <!-- 删掉这行，如果你没有传 Python 脚本 -->
 
 ## Methods
 Two-way fixed-effects panel models · Probit · left-censored Tobit · heterogeneity and mechanism analysis · robustness checks.
