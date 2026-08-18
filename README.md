@@ -1,6 +1,6 @@
 # House-Price Changes and Household Risky-Asset Allocation (CHFS)
 
-Replication package for my undergraduate honors thesis (School of Economics, Shandong University, 2024; graded *Excellent*): **"The Impact of House-Price Changes on Household Risky Financial Asset Allocation under a Housing-Market Downturn."**
+Replication package for my undergraduate honors thesis: **"The Impact of House-Price Changes on Household Risky Financial Asset Allocation under a Housing-Market Downturn."**
 
 The thesis builds a household-year panel of **22,885 observations from three waves** of the China Household Finance Survey (CHFS) in Stata and estimates the effect of house-price changes on households' allocation to risky financial assets, using two-way (household × year) fixed effects with clustered standard errors, by-wave Probit (participation) and left-censored Tobit (share) specifications, plus heterogeneity, mechanism, and robustness analyses. This repository additionally **extends the pipeline to four waves (2015, 2017, 2019, 2021)** as an independent coding exercise; the results reported in the thesis are based on the three-wave panel.
 
@@ -27,4 +27,4 @@ Stata 16+; user-written packages `estout` and `coefplot` (installed automaticall
 
 The CHFS microdata are subject to a data-use license and are **not** included in this repository — only the analysis code is provided. Point `$raw` to your own copy of the CHFS release files to run the pipeline. Raw CHFS province identifiers are Chinese strings; the crosswalk in `03_build_panel.do` maps them to standard province codes.
 
-Author: Ruixin (Mia) Sun · miasun.rx@gmail.com
+Author: Ruixin (Mia) Sun 
